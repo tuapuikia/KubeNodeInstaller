@@ -9,6 +9,9 @@ cp /tmp/cleanup.sh /host
 # Copy wait script to the host 
 cp /wait.sh /host
 
+# Copy install files to the host
+cp -R /files /host/files
+
 # Give executable priv to wait script
 /usr/bin/nsenter -m/proc/1/ns/mnt -- chmod u+x /tmp/install/wait.sh
 

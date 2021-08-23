@@ -8,13 +8,13 @@ data:
     #!/bin/bash
 
     # Update and install packages
-    apt-get update
-    apt-get install cowsay -y
+    sudo apt-get update
+    sudo apt-get install cowsay -y
 
     touch /vagrant/samplefile.txt
 
   cleanup.sh: |
     #!/bin/bash
 
-    apt-get remove cosway
+    sudo apt-get remove cowsay -y
     rm /vagrant/samplefile.txt
