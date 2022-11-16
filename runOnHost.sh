@@ -28,4 +28,4 @@ cp -R /files /host/files
 /usr/bin/nsenter -m/proc/1/ns/mnt /tmp/install/install.sh
 
 # Sleep so that the Pod in the DaemonSet does not exit
-sleep infinity
+#sleep infinity
